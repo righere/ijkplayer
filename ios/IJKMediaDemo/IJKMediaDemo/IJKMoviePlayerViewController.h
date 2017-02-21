@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2013-2015 Bilibili
  * Copyright (C) 2013-2015 Zhang Rui <bbcallen@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +16,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <IJKMediaPlayer/IJKMediaPlayer.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
 @class IJKMediaControl;
 
 @interface IJKVideoViewController : UIViewController
@@ -29,7 +30,7 @@
 
 - (IBAction)onClickMediaControl:(id)sender;
 - (IBAction)onClickOverlay:(id)sender;
-- (IBAction)onClickBack:(id)sender;
+- (IBAction)onClickDone:(id)sender;
 - (IBAction)onClickPlay:(id)sender;
 - (IBAction)onClickPause:(id)sender;
 

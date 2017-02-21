@@ -1,6 +1,7 @@
 /*
  * ijkplayer_android_def.h
  *
+ * Copyright (c) 2013 Bilibili
  * Copyright (c) 2013 Zhang Rui <bbcallen@gmail.com>
  *
  * This file is part of ijkPlayer.
@@ -103,7 +104,7 @@ enum media_info_type {
     // player, which just completed playback
     MEDIA_INFO_STARTED_AS_NEXT = 2,
     // The player just pushed the very first video frame for rendering
-    MEDIA_INFO_RENDERING_START = 3,
+    MEDIA_INFO_VIDEO_RENDERING_START = 3,
     // 7xx
     // The video is too complex for the decoder: it can't decode frames fast
     // enough. Possibly only the audio plays fine at this stage.
@@ -128,6 +129,10 @@ enum media_info_type {
 
     //9xx
     MEDIA_INFO_TIMED_TEXT_ERROR = 900,
+
+    //100xx
+    MEDIA_INFO_VIDEO_ROTATION_CHANGED = 10001,
+    MEDIA_INFO_AUDIO_RENDERING_START = 10002,
 };
 
 typedef struct ijkmp_mediacodecinfo_context
